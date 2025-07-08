@@ -5,8 +5,8 @@
 
 ## 1. Pourquoi comparer ?  
 - **Python** reste le langage de référence en science des données grâce à son écosystème gigantesque (NumPy, pandas, PyTorch…).  
-- **Julia** promet la vitesse du C avec la syntaxe d’un script, sans avoir à passer en C/Fortran pour accélérer. :contentReference[oaicite:0]{index=0}  
-- **Mojo** (2023-25) vise la même ergonomie que Python **mais** avec des performances natives CPU + GPU pour l’IA. :contentReference[oaicite:1]{index=1}  
+- **Julia** promet la vitesse du C avec la syntaxe d’un script, sans avoir à passer en C/Fortran pour accélérer.  
+- **Mojo** (2023-25) vise la même ergonomie que Python **mais** avec des performances natives CPU + GPU pour l’IA.   
 
 Comprendre leurs forces/faiblesses aide à choisir la bonne techno (ou le bon mélange) pour un projet donnée.
 
@@ -19,7 +19,7 @@ Comprendre leurs forces/faiblesses aide à choisir la bonne techno (ou le bon m�
 | Typage | Dynamique | Dynamique + optionnel statique | Statique par défaut (superset Python) |
 | Compilation | Interprété + bytecode (CPython), JIT partiel (3.13 « nogil ») | JIT LLVM à la volée | Ahead-of-Time & JIT, LLVM |
 | Vitesse brute | Lente sans libs natives ; s’améliore avec Cython, Numba | Près du C dès l’écriture | Annoncée proche du C/Metal/GPU |
-| Écosystème | ***énorme*** (PyPI > 500 k paquets) | Plus jeune, niche mais grandit (packages ≈ 11 k) :contentReference[oaicite:2]{index=2} | Tout neuf, principalement IA / HPC |
+| Écosystème | ***énorme*** (PyPI > 500 k paquets) | Plus jeune, niche mais grandit (packages ≈ 11 k)  | Tout neuf, principalement IA / HPC |
 | Multi-threads | GIL (levé partiellement 3.13) | Pas de GIL, scheduling coopératif | Pas de GIL, parallélisme fin |
 | GPU natif | via libs (PyTorch, JAX, CuPy) | CUDA.jl, AMDGPU.jl | Intégré (Metal, CUDA) |
 | Apprentissage | Facile, docs abondantes | Facile pour débuter, plus dur pour méta-programmation | Syntaxe proche Python, docs limitées |
@@ -30,8 +30,8 @@ Comprendre leurs forces/faiblesses aide à choisir la bonne techno (ou le bon m�
 ## 3. Performances (benchmarks synthèse)
 
 - **Python nu** est ~10–100× plus lent que Julia sur boucles numériques pures.  
-- Avec **NumPy** (appel C en vectoriel) Python rejoint souvent Julia sur opérations matricielles simples. :contentReference[oaicite:3]{index=3}  
-- **Mojo** démos officielles : kernels AI 20 000× plus rapides que Python pur, 5–10× plus rapides que NumPy/TensorFlow sur GPU, mais dispo limitée ; difficile de reproduire publiquement (2025). :contentReference[oaicite:4]{index=4}  
+- Avec **NumPy** (appel C en vectoriel) Python rejoint souvent Julia sur opérations matricielles simples. 
+- **Mojo** démos officielles : kernels AI 20 000× plus rapides que Python pur, 5–10× plus rapides que NumPy/TensorFlow sur GPU, mais dispo limitée ; difficile de reproduire publiquement (2025).  
 
 ---
 
