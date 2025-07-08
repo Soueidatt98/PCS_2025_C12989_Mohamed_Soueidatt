@@ -37,7 +37,8 @@
 ---
 
 ## 6. Codes réalisés  
-Les six exercices du § 2.6 se trouvent dans `Notebooks/Exercices_Chap2.ipynb`, un exo par cellule.
+- **Ch. 2 (exercices 1-6) :** `Notebooks/Exercices_Chap2.ipynb`, un exo par cellule.  
+- **Ch. 3 (exercices 1-8) :** `Notebooks/Exercices_Chap3.ipynb`, idem.
 
 ---
 
