@@ -58,7 +58,7 @@
 ---
 
 ## 5. Codes réalisés  
-Les exercices associés aux chapitres 4 et 5 sont disponibles dans `Notebooks/exercices_ch4_ch5.ipynb`.
+Les exercices associés aux chapitre 4 sont disponibles dans `Notebooks/exercices_Chap4.ipynb`, Pour le Chapitre 5 il n'y a pas d'exercice dans le chapitre.
 
 ---
 
